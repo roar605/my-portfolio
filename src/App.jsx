@@ -6,16 +6,25 @@ import Hero from './frontPage/Hero';
 import AboutMe from './frontPage/AboutMe';
 import Projects from './frontPage/Projects';
 import SocialMedia from './frontPage/SocialMedia';
+import Navbar from './frontPage/Navbar';
 
 
 function App() {
+
   return (
+    <div className='relative'>
+      <div className='absolute'>
+            <Navbar></Navbar>
+      </div>
+
     <Routes>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/about' element={<AboutMe/>}/>
       <Route path='/projects' element={<Projects/>}/>
       <Route path='/contact' element={<SocialMedia/>}/>
     </Routes>
+    </div>
+    
   )
 }
 

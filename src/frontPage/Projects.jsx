@@ -12,7 +12,8 @@ const projects=[
     desc:"A simple frontend video streaming platform using reactjs",
     image:"",
     githubLink:"https://github.com/roar605/youtube-clone",
-    deployedLink:"https://youtube-clone-dun-three.vercel.app/"
+    deployedLink:"https://youtube-clone-dun-three.vercel.app/",
+    tech:["react","html","javascript","tailwindcss"]
   },
   {
     id:2,
@@ -20,7 +21,8 @@ const projects=[
     desc:"play tic-tac-toe game",
     image:"",
     githubLink:"https://github.com/roar605/Tic-Tac-Toe",
-    deployedLink:"https://tic-tac-toe-beryl-mu.vercel.app/"
+    deployedLink:"https://tic-tac-toe-beryl-mu.vercel.app/",
+    tech:["react","html","javascript","tailwindcss"]
   },
   {
     id:3,
@@ -28,7 +30,8 @@ const projects=[
     desc:"A simple quizzing platform using html, css, javascript",
     image:"",
     githubLink:"https://github.com/roar605/project-Quiz",
-    deployedLink:"https://project-quiz-six.vercel.app/"
+    deployedLink:"https://project-quiz-six.vercel.app/",
+    tech:["react","html","javascript","tailwindcss"]
   },
   {
     id:4,
@@ -36,7 +39,8 @@ const projects=[
     desc:"Backend project for understanding authentication, routing and built REST API using nodejs nd express",
     image:"",
     githubLink:"https://github.com/roar605/OnlineCourseBackend",
-    deployedLink:"https://github.com/roar605/OnlineCourseBackend"
+    deployedLink:"https://github.com/roar605/OnlineCourseBackend",
+    tech:["react","html","javascript","tailwindcss"]
   },
   {
     id:5,
@@ -44,13 +48,14 @@ const projects=[
     desc:"Full stack live website with payment integration",
     image:"",
     githubLink:"https://github.com/roar605/e-commerce",
-    deployedLink:"https://github.com/roar605/e-commerce"
+    deployedLink:"https://github.com/roar605/e-commerce",
+    tech:["react","html","javascript","tailwindcss"]
   }
 ]
 
 function Projects() {
   return (
-    <div className='flex p-8 gap-4 grid-cols-3'>
+    <div className='grid p-8 '>
       
       {projects.map((project)=>(
         <CommerceCard key={project.id} p={project}></CommerceCard>

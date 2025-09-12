@@ -8,7 +8,7 @@ function Hero() {
   // const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex p-4">
+    <div className="flex pt-16 border-4 h-screen w-screen">
       {/* for my description */}
       <div className="w-[50%]">
         <h1>Rohit Kumar Singh</h1>
