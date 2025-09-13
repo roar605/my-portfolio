@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import Hero from './Hero'
+import Navbar from './frontPage/Navbar';
 
 
 function HomePage() {
 
   return (
-    <div className='bg-[#f5f0e8] w-screen h-screen'>
+    <div className='relative bg-[#f5f0e8] w-screen h-screen'>
       <Hero></Hero>
     </div>
 

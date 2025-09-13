@@ -62,13 +62,13 @@ function Projects() {
     </div>
   );
 }
-function ProjectCard({ image, name, desc, githubLink ,deployedLink}) {
+function ProjectCard({ image, name, desc, githubLink, deployedLink }) {
   return (
     <div className="rounded-xl overflow-hidden group">
       <img
         src={image}
         alt={name}
-        className="w-full h-70 object-cover rounded-xl transform transition-transform duration-500 ease-in-out group-hover:scale-105"
+        className="w-full h-70 object-cover rounded-xl transform transition-transform duration-500 ease-in-out group-hover:scale-103"
       />
       <div className="p-4 flex">
         <div className="w-2/3">
@@ -77,9 +77,10 @@ function ProjectCard({ image, name, desc, githubLink ,deployedLink}) {
         </div>
         <div className="">
           <a href={deployedLink} target="_blank">
-            <button className="mx-2 border-pink-400 border-2 rounded-lg px-2 text-pink-400 hover:cursor-pointer hover:text-black hover:bg-pink-400">Demo</button>
+            <button className="mx-2 border-pink-400 border-2 rounded-lg px-2 text-pink-400 hover:cursor-pointer hover:text-black hover:bg-pink-300">Demo</button>
           </a>
-          <a href={githubLink} target="_blank"><button className="mx-2 border-pink-400 border-2 rounded-lg px-2 text-pink-400 hover:cursor-pointer hover:text-black hover:bg-pink-400">Github</button>
+          <a href={githubLink} target="_blank">
+            <button className="mx-2 border-pink-400 border-2 rounded-lg px-2 text-pink-400 hover:cursor-pointer hover:text-black hover:bg-pink-300">Github</button>
           </a>
         </div>
 
