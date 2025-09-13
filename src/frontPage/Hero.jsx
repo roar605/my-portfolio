@@ -1,23 +1,20 @@
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Card } from "@/components/ui/card";
-import codingRohit from "../assets/computer.png";
+import tech from "../assets/tech.png"
 
 function Hero() {
   // const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex pt-16 border-4 h-screen w-screen">
+    <div className='relative h-screen bg-cover bg-center flex items-center justify-center ' >
+      {/* bg image */}
+      <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center opacity-70" style={{ backgroundImage: `url(${tech})` }}></div>
+
       {/* for my description */}
-      <div className="w-[50%]">
-        <h1>Rohit Kumar Singh</h1>
+      <div className="relative z-10 text-black text-center">
+        <h1 className="text-8xl ">Welcome to</h1>
+        <h1 className="text-8xl">my portfolio</h1>
       </div>
 
-      {/* for the image */}
-      <div className="flex justify-center">
-        <img src={codingRohit} width={400}></img>
-      </div>
+     
     </div>
    
   )

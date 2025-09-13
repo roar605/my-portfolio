@@ -1,28 +1,22 @@
-import React from 'react'
-import { Button } from "@/components/retroui/Button";
-import HomePage from './frontPage/HomePage';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Hero from './frontPage/Hero';
 import AboutMe from './frontPage/AboutMe';
 import Projects from './frontPage/Projects';
 import SocialMedia from './frontPage/SocialMedia';
-import Navbar from './frontPage/Navbar';
-
+import TechStacks from './frontPage/TechStacks';
 
 function App() {
 
   return (
-    <div className='relative'>
-      <div className='absolute'>
-            <Navbar></Navbar>
-      </div>
-
-    <Routes>
-      <Route path='/' element={<HomePage/>}/>
-      <Route path='/about' element={<AboutMe/>}/>
-      <Route path='/projects' element={<Projects/>}/>
-      <Route path='/contact' element={<SocialMedia/>}/>
-    </Routes>
+    <div className='bg-[#f5f0e8]'>
+      <Hero></Hero>
+      <div className='border w-3/4 bg-[#f5f0e8] border-pink-400 m-auto'></div>
+      <AboutMe></AboutMe>
+      <div className='border w-3/4 bg-[#f5f0e8] border-pink-400 m-auto'></div>
+      <Projects></Projects>
+      <div className='border w-3/4 bg-[#f5f0e8] border-pink-400 m-auto'></div>
+      <TechStacks></TechStacks>
+      <div className='border w-3/4 bg-[#f5f0e8] border-pink-400 m-auto'></div>
+      <SocialMedia></SocialMedia>
     </div>
     
   )
