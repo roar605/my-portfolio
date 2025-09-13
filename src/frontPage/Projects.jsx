@@ -4,7 +4,6 @@ import tictactoe from "../assets/tictactoe.png";
 import ecommerce from "../assets/ecommerce.png";
 import onlinecourse from "../assets/onlinecourse.png";
 import quiz from "../assets/quiz.png";
-import tech from "../assets/tech.png"
 
 
 const projects = [
