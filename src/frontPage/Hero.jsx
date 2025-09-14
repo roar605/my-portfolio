@@ -1,4 +1,4 @@
-import tech from "../assets/tech.png"
+import tech from "../assets/herobkg.png"
 
 function Hero() {
   // const [open, setOpen] = useState(false);

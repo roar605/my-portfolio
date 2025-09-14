@@ -4,6 +4,7 @@ import tictactoe from "../assets/tictactoe.png";
 import ecommerce from "../assets/ecommerce.png";
 import onlinecourse from "../assets/onlinecourse.png";
 import quiz from "../assets/quiz.png";
+import { useState } from "react";
 
 
 const projects = [
@@ -50,16 +51,24 @@ const projects = [
 ]
 
 function Projects() {
-  console.log(projects);
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.slice(0, 4)
 
   return (
     <div className="min-h-screen  px-6 py-12">
       <h1 className="flex justify-center text-4xl font-bold mb-12 mx-auto">Projects</h1>
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {projects.map((project, index) => (
+        {visibleProjects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
+      {/* Button */}
+      <button
+        onClick={() => setShowAll(!showAll)}
+        className="mt-6 hover:cursor-pointer mx-auto flex justify-center px-6 border border-pink-600 py-2 hover:bg-pink-600 text-pink-600 hover:text-black rounded-lg transition"
+      >
+        {showAll ? "Show Less" : "Explore More"}
+      </button>
     </div>
   );
 }

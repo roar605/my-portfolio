@@ -9,7 +9,7 @@ function AboutMe() {
         {/* Left Side (Text Section) */}
         <div>
           {/* About Me Button */}
-          <span className="px-4 py-1 bg-pink-400 text-sm rounded-md font-semibold">
+          <span className="px-4 py-1  bg-pink-400 text-sm rounded-md font-semibold">
             ABOUT ME
           </span>
 

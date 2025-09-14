@@ -2,10 +2,29 @@ import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 import { MdBarChart } from "react-icons/md";
 import { GiChefToque } from "react-icons/gi";
+import { useState, useEffect } from "react";
 
 function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     return (
-        <div className="flex justify-center gap-6 py-6 bg-opacity-50 ">
+        <div className={`flex gap-4 p-3 fixed top-0  left-0 w-full z-50 transition-all duration-300 ${scrolled
+                ? "bg-pink-600/40 backdrop-blur-md justify-end transition-all duration-300"
+                : "bg-transparent p-4 mx-auto justify-center flex transition-all duration-300"
+            }`}>
             <a
                 href="https://github.com/roar605"
                 target="_blank"
@@ -27,7 +46,7 @@ function Navbar() {
                 <SiLeetcode size={24} />
                 {/* Tooltip */}
                 <span className="absolute bottom-10 scale-0 rounded-md bg-gray-800 text-white text-sm px-2 group-hover:scale-100 transition">
-                    geeksForGeeks
+                    Leetcode
                 </span>
             </a>
 
@@ -40,7 +59,7 @@ function Navbar() {
                 <FaLinkedin size={24} />
                 {/* Tooltip */}
                 <span className="absolute bottom-10 scale-0 rounded-md bg-gray-800 text-white text-sm px-2 group-hover:scale-100 transition">
-                    geeksForGeeks
+                    LinkedIn
                 </span>
             </a>
 

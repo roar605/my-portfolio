@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Hero from './Hero'
-import Navbar from './frontPage/Navbar';
 
 
 function HomePage() {

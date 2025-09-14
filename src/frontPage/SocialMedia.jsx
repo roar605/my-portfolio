@@ -78,7 +78,7 @@ import contact from "../assets/contact.png"
 
             <button
               type="submit"
-              className="border border-pink-400 hover:bg-pink-300 px-6 py-3 rounded-md text-pink-400 hover:text-gray-700 font-semibold flex items-center gap-2 transition"
+              className="hover:cursor-pointer border border-pink-400 hover:bg-pink-300 px-6 py-3 rounded-md text-pink-400 hover:text-gray-700 font-semibold flex items-center gap-2 transition"
             >
               Say Hello 👋
             </button>
