@@ -54,6 +54,7 @@ function Projects() {
 
   return (
     <div className="min-h-screen  px-6 py-12">
+      <h1 className="flex justify-center text-4xl font-bold mb-12 mx-auto">Projects</h1>
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
@@ -77,7 +78,7 @@ function ProjectCard({ image, name, desc, githubLink, deployedLink }) {
         </div>
         <div className="">
           <a href={deployedLink} target="_blank">
-            <button className="mx-2 border-pink-400 border-2 rounded-lg px-2 text-pink-400 hover:cursor-pointer hover:text-black hover:bg-pink-300">Demo</button>
+            <button className="mx-2 border-pink-400 border-2 rounded-lg px-2 text-pink-400 hover:cursor-pointer hover:text-black hover:bg-pink-300">Visit</button>
           </a>
           <a href={githubLink} target="_blank">
             <button className="mx-2 border-pink-400 border-2 rounded-lg px-2 text-pink-400 hover:cursor-pointer hover:text-black hover:bg-pink-300">Github</button>
